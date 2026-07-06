@@ -176,7 +176,6 @@ void Comanda::proceseazaComanda() {
 }
 
 void Comanda::tiparesteBon(std::ostream& os) const {
-    os << "\n========================================= BON FISCAL =========================================\n";
     os << " Comanda ID: " << idComanda << " | Status: " << status << "\n";
     os << "-----------------------------------------------------------------------------------------------\n";
     
@@ -224,7 +223,6 @@ void Comanda::tiparesteBon(std::ostream& os) const {
     os << " Bacsis (" << (int)bacsisProcent << "%):                      " << std::right << std::setw(8) << ((subtotalTotal + tvaTotal) * (bacsisProcent / 100.0)) << " RON\n";
     os << "-----------------------------------------------------------------------------------------------\n";
     os << " TOTAL GENERAL:                    " << std::right << std::setw(8) << calculeazaTotal() << " RON\n";
-    os << "===============================================================================================\n";
 }
 
 int Comanda::getNumarTotalComenzi() {

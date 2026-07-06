@@ -110,7 +110,6 @@ Ingredient* Restaurant::gasesteIngredient(const std::string& nume) const {
 }
 
 void Restaurant::afiseazaInventar() const {
-    std::cout << "\n=========================== STOC INGREDIENTE ===========================\n";
     if (inventar.empty()) {
         std::cout << "Inventarul este gol.\n";
     } else {
@@ -118,7 +117,6 @@ void Restaurant::afiseazaInventar() const {
             std::cout << " * " << *ing << "\n";
         }
     }
-    std::cout << "========================================================================\n";
 }
 
 void Restaurant::adaugaProdusInMeniu(Produs* p) {
@@ -165,7 +163,6 @@ void Restaurant::plaseazaComanda(const std::vector<int>& idsProduse, double bacs
 }
 
 void Restaurant::afiseazaIstoricComenzi() const {
-    std::cout << "\n=========================== ISTORIC COMENZI ===========================\n";
     if (comenzi.empty()) {
         std::cout << "Nu s-a inregistrat nicio comanda finalizata pana acum.\n";
     } else {
@@ -178,7 +175,6 @@ void Restaurant::afiseazaIstoricComenzi() const {
                       << " | Total: " << c.calculeazaTotal() << " RON\n";
         }
     }
-    std::cout << "========================================================================\n";
 }
 
 double Restaurant::getTotalIncasari() {

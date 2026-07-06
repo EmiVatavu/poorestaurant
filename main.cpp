@@ -14,7 +14,6 @@ void curataInput() {
 }
 
 void afiseazaMeniuOptiuni() {
-    std::cout << "\n=================== GESTIUNE RESTAURANT ===================\n";
     std::cout << " 1. Afiseaza Meniul Restaurantului\n";
     std::cout << " 2. Plaseaza o Comanda Noua\n";
     std::cout << " 3. Vizualizeaza Stocul de Ingrediente\n";
@@ -22,7 +21,6 @@ void afiseazaMeniuOptiuni() {
     std::cout << " 5. Administrare Catalog Meniu (Adaugare/Stergere)\n";
     std::cout << " 6. Vizualizeaza Incasari si Istoric Comenzi\n";
     std::cout << " 0. Iesire din Aplicatie\n";
-    std::cout << "===========================================================\n";
     std::cout << "Alegeti o optiune: ";
 }
 

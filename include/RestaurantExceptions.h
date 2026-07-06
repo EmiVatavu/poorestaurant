@@ -43,4 +43,4 @@ public:
         : RestaurantException("Eroare date: Valoarea introdusa pentru campul '" + camp + "' este invalida.") {}
 };
 
-#endif // RESTAURANT_EXCEPTIONS_H
+#endif 

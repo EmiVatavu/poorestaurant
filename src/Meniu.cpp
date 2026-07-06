@@ -78,7 +78,6 @@ Produs* Meniu::gasesteProdus(int id) const {
 }
 
 void Meniu::afiseazaMeniu() const {
-    std::cout << "\n=========================== MENIU RESTAURANT ===========================\n";
     if (produse.empty()) {
         std::cout << "Meniul este gol.\n";
     } else {
@@ -86,7 +85,6 @@ void Meniu::afiseazaMeniu() const {
             std::cout << *p << "\n";
         }
     }
-    std::cout << "========================================================================\n";
 }
 
 const std::vector<Produs*>& Meniu::getProduse() const {
